@@ -1,0 +1,115 @@
+      /*Réglage général*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 0px;
+    width: 10%;
+    margin: auto;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}  
+button:hover {
+    background-color: #333;
+    color: white;
+  }
+
+          /*La tête de la page*/
+
+
+header {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+
+          /*La liste des tâches*/
+
+
+ul.listTask li.tasks {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.3s; 
+  }
+  
+  ul.listTask li.tasks:hover {
+    background: #ddd;
+  }
+
+  ul.listTask li.completedTask ,ul.listTask li.completedTask:hover{ 
+    background: #111;
+    color: #ccc;
+  }
+
+  .btnCompleted {
+    border: none;
+    float: right;
+  }
+
+        /* Le pieds de la page  */
+                        
+ footer ul.actions {
+    display: flex;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+  }
+
+  li .linkAction{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 45px;
+    text-decoration: none;
+  }
+  
+  li .linkAction:hover {
+    background-color: #111;
+  }
+  footer ul.actions button.btnRemoveCompleted{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+  }
+
+      /*La page AddTask: page pour ajouter une nouvelle tâche */
+  
+
+  input[type="text"] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 25px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+  }    
+    .btnAddTask {
+      height: 45px;
+  }
+
+  
+
+  
