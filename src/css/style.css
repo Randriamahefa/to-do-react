@@ -1,4 +1,3 @@
-      /*Réglage général*/
 
 * {
     box-sizing: border-box;
@@ -25,7 +24,6 @@ button:hover {
     color: white;
   }
 
-          /*La tête de la page*/
 
 
 header {
@@ -36,7 +34,6 @@ header {
 }
 
 
-          /*La liste des tâches*/
 
 
 ul.listTask li.tasks {
@@ -63,7 +60,6 @@ ul.listTask li.tasks {
     float: right;
   }
 
-        /* Le pieds de la page  */
                         
  footer ul.actions {
     display: flex;
@@ -96,7 +92,6 @@ ul.listTask li.tasks {
     top: 35px;
   }
 
-      /*La page AddTask: page pour ajouter une nouvelle tâche */
   
 
   input[type="text"] {

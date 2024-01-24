@@ -1,28 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-class Tasks extends React.Component {
-    state = {
-        completed : this.props.task.completed // qui va retourner true ou false
-    }
+const Tasks = ({task}) => {
+    const [isCompleted,setIsCompleted] = useState({completed:task.completed}) 
 
     /* Modifie la valeur de l'état de "completed" 
       à chaque fois qu'on clique sur le button 'btnCompleted' */
-    toogleCompleted = () => { 
 
-        this.setState(prevState => ({
-            completed: !prevState.completed
-        }))
-        this.props.task.completed = !this.state.completed
-    }
-    /* Affiche les tâches une à une */ 
-    render() {
-        return(
-            <li className={"tasks " + (this.state.completed? 'completedTask': null)} >
-                {this.props.task.name}
-                <button className="btnCompleted" onClick={() => this.toogleCompleted()} >&#x2713;</button>
-            </li>
-        )
-    }
+     const toogleCompleted = () => {
+        setIsCompleted(prevState => {
+            return {
+                completed:!prevState.completed
+            }
+        })
+        task.completed = !isCompleted.completed
+
+     } 
+
+     return(
+        <li className={"tasks " + (task.completed && 'completedTask')} >
+            {task.name}
+            <button className="btnCompleted" onClick={() => toogleCompleted()} >&#x2713;</button>
+        </li>
+    )
+     
 }
 
 export default Tasks

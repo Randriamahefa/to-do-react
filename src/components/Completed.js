@@ -7,11 +7,11 @@ const Completed = ({tasks}) => {
     return ( 
     <div className='toDo'>
         <header>
-           <h1>Liste de tâches</h1> 
+           <h1>Les tâches effectuées</h1> 
         </header>
         <ul className="listTask">
             {  
-                filterTask.map((task) => <Tasks task={task} key={task.id} />) 
+                filterTask.map((task,id) => <Tasks task={task} key={id} />) 
             }
         </ul>
     </div>

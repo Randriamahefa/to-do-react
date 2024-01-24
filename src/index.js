@@ -12,6 +12,3 @@ root.render(
 );
 
 
-
-// react Render
-// ReactDOM.render(<App /> , document.getElementById('root'))
